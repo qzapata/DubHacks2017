@@ -1,38 +1,15 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
+body{
+    background-color: #BDD7CF;
+}
+.list-group {
+  padding-top: 3cm;
+  padding-left: 2cm;
+  text-align: center; 
+  border-color: #7C8355;
 }
 
-.form-task {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-task .form-task-heading,
-.form-task .checkbox {
-  margin-bottom: 10px;
-}
-.form-task .checkbox {
-  font-weight: 400;
-}
-.form-task .form-control {
+.calendar {
   position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-task .form-control:focus {
-  z-index: 2;
-}
-.form-task input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-task input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  right: -500px;
+  top: -200px;
 }

@@ -1,18 +1,15 @@
 {% extends "base_generic.html" %}
 {% block body %}
-<div class="form-task">
-  <label class="col-form-label" for="formGroupExampleInput">Task Name</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Assignment Title">
+
+<div class="list-group" style="width:25%">
+  <a class="list-group-item list-group-item-action" href="#">Add Task</a>
+  <a class="list-group-item list-group-item-action" href="#">Add Event</a>
+  <a class="list-group-item list-group-item-action" href="#">Add Exam</a>
 </div>
-<div class="form-task">
-  <select class="custom-select">
-    <label class="col-form-label"> How Long does it take? (hours)</label>
-      <option selected>1</option>
-      <option value="1">2</option>
-      <option value="2">3</option>
-      <option value="3">4</option>
-      <option value="4">5+</option>
-  </select>
+
+<div class="calendar" style="width:75%; height:50%">
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=allison27.picker%40gmail.com&amp;color=%23875509&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
+
 {% endblock %}
 
