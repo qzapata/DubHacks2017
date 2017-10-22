@@ -8,6 +8,6 @@
 
 	//sets onload function of the page
 	window.onload = function() {
-		console.log("loaded");
+		$("")
 	}; 
 }) ();
