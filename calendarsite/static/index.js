@@ -16,6 +16,8 @@
 	}; 
 
 	function AddTask() {
+
+		
 		values.push("task");
 		values.push(document.getElementById("taskName").value);
 		values.push(document.getElementById("taskStart").value); 

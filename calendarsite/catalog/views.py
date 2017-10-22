@@ -12,6 +12,6 @@ def task(request):
 	return render(request, 'task.html')
 
 def get_data(request):
-	tasks = request.POST.getlist('tasks[]')
+	data = request.POST.getlist('data[]')
 	print(tasks)
 	return HttpResponse('success')
