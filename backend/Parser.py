@@ -2,6 +2,7 @@ import Planner
 import Event
 import Homework
 import datetime
+import Exam
 
 
 class parser:
@@ -10,11 +11,21 @@ class parser:
         o = arr[0]
         events = o['event']
         tasks = o['task']
-        exam = o['exam']
+        exams = o['exam']
         e = self._getevents(events)
         t = self._gethw(tasks)
-        p = Planner.planner(e, t)
+        ex = self._getexams(exams)
+        p = Planner.planner(e, t, ex)
         self.events = p.events
+
+    def _getexams(self,exams):
+        e = []
+        for d in exams:
+            time = int(d['time'])
+            date = self._parsestringtodate(d['duedate'])
+            name = d['name']
+            e.append(Exam.exam(date, time, name))
+        return e
 
     def _getevents(self, events):
         e = []
@@ -22,7 +33,7 @@ class parser:
             start = self._parsestringtodate(d['time'])
             end = self._parsestringtodate(d['duedate'])
             name = d['name']
-            e.append(start, end, name)
+            e.append(Event.event(start, end, name))
         return e
 
     def _gethw(self, tasks):
@@ -31,7 +42,7 @@ class parser:
             time = int(d['time'])
             duedate = self._parsestringtodate(d['duedate'])
             name = d['name']
-            h.append(duedate, time, name)
+            h.append(Homework.homework(duedate, time, name))
         return h
 
     def _parsestringtodate(self, s):
