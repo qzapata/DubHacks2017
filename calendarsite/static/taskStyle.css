@@ -35,10 +35,8 @@ body{
 
 #calendar {
   position: fixed;
-  right: -50px;
-  top: 100px;
-  width:70%;
-  height: 50%;
-  float: right;
+  right: 50px;
+  top: 85px;
+  width:50%;
   background-color: white;
 }
