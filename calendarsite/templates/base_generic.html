@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block title %}<title>Local Lib</title>{% endblock %}
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  		{% load static %}
+  		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'taskStyle.css' %}">
+  		<script type="text/javascript" src="{% static 'index.js' %}"></script>
+  	</head>
+  	<body>
+  		{% block header %}
+    	<div class="navbar navbar-dark" style="background-color: #5b5941;">
+        	<div class="container d-flex justify-content-between">
+          		<a href="#" class="navbar-brand">Calendar</a>
+        	</div>
+     	</div>
+     	{% endblock %}
+     	
+     	<main role="main">
+     	{% block body %}{% endblock %}
+     	</main>
+
+     	<footer class="text-muted">
+     	{% block footer %}
+      	<div class="container">
+        	<p class="float-right">
+          		<a href="#">Back to top</a>
+        	</p>
+      	</div>
+     	{% endblock %}
+	    </footer>
+  	</body>
+</html>

@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		{% block title %}<title>i am a test page</title>{% endblock %}
-		<meta charset="utf-8">
-	</head>
-	<body>
-		{% block content %}
-		<h1>oooohhh weeee loookkkk attt meeeee</h1>
-		{% endblock %}
-	</body>
-</html>
+{% extends "base_generic.html" %}
+{% block body %}
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Start sorting out your life</h1>
+      <p class="lead text-muted">Need help figuring out what to do and when to do it? Let someone else deal with it!</p>
+      <p>
+        <a href="#" class="btn btn-outline-light-brown">New Task</a>
+        <a href="#" class="btn btn-outline-dark-green">New Event</a>
+        <a href="#" class="btn btn-outline-turqoise">New Exam </a> 
+      </p>
+    </div>
+  </section>
+
+  <div class="album text-muted">
+    <div class="flex-container">
+
+      <div class="menu">
+        <div class="card"><a>Create a new task</a>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card"><a>Create a new event</a>
+          <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card"><a>Create a new exam</a>
+          <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+

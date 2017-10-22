@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+{% block body %}
+<div class="form-task">
+  <label class="col-form-label" for="formGroupExampleInput">Task Name</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Assignment Title">
+</div>
+<div class="form-task">
+  <select class="custom-select">
+    <label class="col-form-label"> How Long does it take? (hours)</label>
+      <option selected>1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+      <option value="4">5+</option>
+  </select>
+</div>
+{% endblock %}
+
