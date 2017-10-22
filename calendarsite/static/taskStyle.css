@@ -4,16 +4,39 @@ body{
 }
 
 .list-group {
+  width: 35%;
+  height: 30%;
   padding-top: 3cm;
-  padding-left: 3cm;
-  font-size: 22pt;
+  padding-left: 1.5cm;
+  font-size: 30pt;
+  font-family: "Lucida Console";
   text-align: center; 
-  border-color: #7C8355;
-  height: 50px;
+  background-color: transparent;
+}
+
+.button-item {
+  border-color: #FCEDD4;
+
+}
+
+.button-item2 {
+  border-color: #DEEBE7;
+}
+
+.button-item3 {
+  border-color: #CFD1C1;
 }
 
 .calendar {
-  position: fixed;
+  position: absolute;
   right: -200px;
   top: 100px;
+}
+
+#calendar {
+  position: fixed;
+  right: 50px;
+  top: 85px;
+  width:50%;
+  background-color: white;
 }

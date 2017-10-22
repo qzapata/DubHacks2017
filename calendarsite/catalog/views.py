@@ -8,7 +8,7 @@ import Event
 
 # Create your views here.
 def index(request):
-	return render(request, 'index.html')
+	return render(request, 'task.html')
 
 def task(request):
 	return render(request, 'task.html')

@@ -5,19 +5,26 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   		{% load static %}
   		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 		<link rel="stylesheet" type="text/css" href="{% static 'taskStyle.css' %}">
+		<link rel='stylesheet' href="{% static 'fullcalendar/fullcalendar.css' %}">
   		<script type="text/javascript" src="{% static 'index.js' %}"></script>
+  		<script src="{% static '/fullcalendar/lib/moment.min.js' %}"></script>
+		<script src="{% static 'fullcalendar/fullcalendar.js' %}"></script>
+  		<script type="text/javascript" src="{% static 'calendar.js' %}"></script>
+  		<script async defer src="https://apis.google.com/js/api.js"
+	      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    	</script>
   	</head>
   	<body>
   		{% block header %}
     	<div class="navbar navbar-dark" style="background-color: #5b5941;">
         	<div class="container d-flex justify-content-between">
-          		<a id="title" class="navbar-brand">Calendar</a>
+          		<a id="title" class="navbar-brand">Build Your Perfect Schedule!</a>
         	</div>
      	</div>
      	{% endblock %}
