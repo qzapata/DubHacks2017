@@ -7,9 +7,9 @@ class planner:
 
     MONTH_VALUES = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     LEAP_VALUES = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    def __init__(self, events, homeworks):
+    def __init__(self, events, homeworks, exams):
         sortedhw = self._sorthomework(homeworks)
-        cal = CalendarMaker.calendarmaker(sortedhw, self._getdays(events, sortedhw))
+        cal = CalendarMaker.calendarmaker(sortedhw, self._getdays(events, sortedhw, exams))
         self.events = cal.events
 
     def _getdays(self, events, homeworks):
