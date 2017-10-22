@@ -17,4 +17,4 @@ def get_data(request):
 	data = request.POST.getlist('data[]')
 	print(data)
 
-	return HttpResponse('success')
+	return HttpResponse(template.render(context, request))
