@@ -1,7 +1,7 @@
 import datetime
 import HomeworkSegment
 
-class Homework:
+class homework:
 
     IDEAL_WORK = 50
     IDEAL_BREAK = 15
@@ -13,12 +13,15 @@ class Homework:
 
     def intoChunks(self):
         eventList = []
-        dur = self.duration
+        dur = self.duration * 60
         while (dur > 0):
             if (dur > self.IDEAL_WORK):
-                eventList.append(HomeworkSegment(self.IDEAL_WORK, self.name))
+                eventList.append(HomeworkSegment.homeworksegment(self.IDEAL_WORK, self.name))
                 dur -= self.IDEAL_WORK
             else:
-                eventList.append(HomeworkSegment(dur, self.name))
+                eventList.append(HomeworkSegment.homeworksegment(dur, self.name))
+                break
+        for e in eventList:
+            print(e.__str__())
         return eventList
 
