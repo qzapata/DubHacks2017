@@ -7,18 +7,15 @@
       <input id="taskName" type="text" class="form-control" placeholder="Task Name" aria-describedby="basic-addon1">
     </div>
     <div class="input-group">
-
       <span class="input-group-addon input-label" id="basic-addon1">Time</span>
-      <input id="eventName" type="text" class="form-control" placeholder="Duration" aria-describedby="basic-addon1">
+      <input id="taskStart" type="text" class="form-control" placeholder="Duration" aria-describedby="basic-addon1">
     </div>
     <div class="input-group">
       <span class="input-group-addon input-label" id="basic-addon1">Due Date</span>
-      <input id="eventName" type="text" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="basic-addon1">
+      <input id="taskEnd" type="text" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="basic-addon1">
     </div>
-
-    <button type="button" class="btn btn-outline-light-brown">Submit Task</button>
-    <textarea id="eventText" readonly></textarea>
-
+    <button id="taskBtn" type="button" class="btn btn-outline-light-brown">Submit Task</button>
+    <textarea id="taskText" readonly></textarea>
   </section>
 
   <section class="input-select">
@@ -34,9 +31,9 @@
       <span class="input-group-addon input-label" id="basic-addon1">End Time</span>
       <input id="eventEnd" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
     </div>
-    <button type="button" class="btn btn-outline-light-brown ">Submit Event</button>
-    <textarea id="taskText" readonly></textarea>
-    <button type="button" class="btn btn-outline-dark-green ">Create Schedule</button>
+    <button id="eventBtn" type="button" class="btn btn-outline-light-brown ">Submit Event</button>
+    <textarea id="eventText" readonly></textarea>
+    <button id="crSchedule" type="button" class="btn btn-outline-dark-green ">Create Schedule</button>
   </section>
 
   <section class="input-select">
@@ -52,7 +49,7 @@
       <span class="input-group-addon input-label" id="basic-addon1">End Time</span>
       <input id="examEnd" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
     </div>
-    <button type="button" class="btn btn-outline-light-brown ">Submit Exam</button>
+    <button id="examBtn" type="button" class="btn btn-outline-light-brown ">Submit Exam</button>
     <textarea id="examText" readonly></textarea>
   </section>
   
