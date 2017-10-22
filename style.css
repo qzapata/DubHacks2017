@@ -4,3 +4,17 @@
 	background-image: none;
 	border-color: #F7D08A;
 }
+
+.btn-lime-green {
+	color: #E3F09B;
+	background-color: transparent;
+	background-image: none;
+	border-color: #E3F09B;
+}
+
+.btn-turqoise {
+	color: #87B6A7;
+	background-color: transparent;
+	background-image: none;
+	border-color: #87B6A7;
+}
