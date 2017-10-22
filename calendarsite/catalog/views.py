@@ -13,4 +13,5 @@ def task(request):
 
 def get_data(request):
 	tasks = request.POST.getlist('tasks[]')
+	print(tasks)
 	return HttpResponse('success')
