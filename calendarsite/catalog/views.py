@@ -29,6 +29,6 @@ def get_data(request):
         l.append(e.name)
     print(l)
     #return HttpResponseRedirect(reverse("task"))
-    return render_to_response('task.html', {'papel' : "l"}, RequestContext(request))
+    return render_to_response('task.html', {'papel' : l}, RequestContext(request))
 
 

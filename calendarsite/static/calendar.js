@@ -113,8 +113,8 @@
 	}
 
 	window.onload = function () {
-		console.log("calendar me bitch");
-
+		var data = {{ papel|safe }};
+		console.log(data);
 		$('#calendar').fullCalendar({
     		weekends: true
 		});
