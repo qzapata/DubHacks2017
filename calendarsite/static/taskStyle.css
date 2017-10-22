@@ -17,3 +17,13 @@ body{
   right: -200px;
   top: 100px;
 }
+
+#calendar {
+  position: fixed;
+  right: -50px;
+  top: 100px;
+  width:70%;
+  height: 50%;
+  float: right;
+  background-color: white;
+}
