@@ -8,44 +8,35 @@ import Exam
 class parser:
 
     def __init__(self, arr):
-        o = arr[0]
-        events = o['event']
-        tasks = o['task']
-        exams = o['exam']
-        e = self._getevents(events)
-        t = self._gethw(tasks)
-        ex = self._getexams(exams)
-        p = Planner.planner(e, t, ex)
+        events = []
+        tasks = []
+        exams = []
+        i = 0
+        while (i < len(arr)):
+            s = arr[i]
+            if s == 'event':
+                start = self._parsestringtodate(arr[i + 1])
+                end = self._parsestringtodate(arr[i + 2])
+                name = arr[i + 3]
+                i+= 4
+                events.append(Event.event(start, end, name))
+            elif s == 'task':
+                name = arr[i + 1]
+                duration = int(arr[i + 2])
+                time = self._parsestringtodate(arr[i + 3])
+                i += 4
+                tasks.append(Homework.homework(time, duration, name))
+            else:
+                name = arr[i + 1]
+                duration = int(arr[i + 2])
+                time = self._parsestringtodate(arr[i + 3])
+                i += 4
+                tasks.append(Exam.exam(time, duration, name))
+        p = Planner.planner(events, tasks, exams)
         self.events = p.events
 
-    def _getexams(self,exams):
-        e = []
-        for d in exams:
-            time = int(d['time'])
-            date = self._parsestringtodate(d['duedate'])
-            name = d['name']
-            e.append(Exam.exam(date, time, name))
-        return e
 
-    def _getevents(self, events):
-        e = []
-        for d in events:
-            start = self._parsestringtodate(d['time'])
-            end = self._parsestringtodate(d['duedate'])
-            name = d['name']
-            e.append(Event.event(start, end, name))
-        return e
-
-    def _gethw(self, tasks):
-        h = []
-        for d in tasks:
-            time = int(d['time'])
-            duedate = self._parsestringtodate(d['duedate'])
-            name = d['name']
-            h.append(Homework.homework(duedate, time, name))
-        return h
-
-    def _parsestringtodate(self, s):
+def _parsestringtodate(self, s):
         '''mm/dd/yyyy hh:mm'''
         m = int(s[:2])
         d = int(s[3:5])
