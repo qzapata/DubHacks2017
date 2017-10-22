@@ -1,15 +1,19 @@
 body{
+
     background-color: #BDD7CF;
 }
+
 .list-group {
   padding-top: 3cm;
-  padding-left: 2cm;
+  padding-left: 3cm;
+  font-size: 22pt;
   text-align: center; 
   border-color: #7C8355;
+  height: 50px;
 }
 
 .calendar {
-  position: relative;
-  right: -500px;
-  top: -200px;
+  position: fixed;
+  right: -200px;
+  top: 100px;
 }
