@@ -29,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1200">
@@ -37,16 +37,6 @@
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../calendarsite/calendarsite/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -148,8 +138,8 @@
         <option value="$PROJECT_DIR$/../calendarsite/catalog/Homework.py" />
         <option value="$PROJECT_DIR$/../calendarsite/catalog/CalendarMaker.py" />
         <option value="$PROJECT_DIR$/../calendarsite/catalog/urls.py" />
-        <option value="$PROJECT_DIR$/../calendarsite/catalog/views.py" />
         <option value="$PROJECT_DIR$/../calendarsite/calendarsite/urls.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/views.py" />
       </list>
     </option>
   </component>
@@ -665,6 +655,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/calendarsite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -672,14 +670,6 @@
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../calendarsite/calendarsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
