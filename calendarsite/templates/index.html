@@ -1,4 +1,8 @@
 {% extends "base_generic.html" %}
+{% block js %}
+{% load static %}
+<script type="text/javascript" src="{% static 'index.js' %}"></script>
+{% endblock %}
 {% block body %}
 <div id="main-content">
   <section class="input-select">

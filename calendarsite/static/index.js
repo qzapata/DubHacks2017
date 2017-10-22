@@ -3,6 +3,7 @@
 
 	//sets onload function of the page
 	window.onload = function() {
+		console.log("kill me");
 		values = new Array();
 
 		document.getElementById("taskText").value = "";

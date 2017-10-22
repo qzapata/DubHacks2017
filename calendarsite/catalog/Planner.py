@@ -9,11 +9,11 @@ class planner:
     LEAP_VALUES = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     def __init__(self, events, homeworks, exams):
         sortedhw = self._sorthomework(homeworks)
-        cal = CalendarMaker.calendarmaker(sortedhw, self._getdays(events, sortedhw, exams))
+        cal = CalendarMaker.calendarmaker(sortedhw, self._getdays(events, sortedhw, exams), exams)
         self.events = cal.events
 
-    def _getdays(self, events, homeworks):
-        lastday = self._getlastday(events, homeworks)
+    def _getdays(self, events, homeworks, exams):
+        lastday = self._getlastday(events, homeworks, exams)
         d = {}
         didx = datetime.date.today()
         while (True):
@@ -29,10 +29,14 @@ class planner:
             days.append(Day.day(d[t], t))
         return days
 
-    def _getlastday(self, events, homeworks):
+    def _getlastday(self, events, homeworks, exams):
         lastday = datetime.date.today()
         for e in events:
             d = datetime.date(e.start.year, e.start.month, e.start.day)
+            if (d > lastday):
+                lastday = d
+        for e in exams:
+            d = datetime.date(e.date.year, e.date.month, e.date.day)
             if (d > lastday):
                 lastday = d
         for h in homeworks:
