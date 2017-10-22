@@ -17,33 +17,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalendarMaker.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalendarMaker.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1240">
-              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="720">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#24#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventCreator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EventCreator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Planner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Planner.py">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Planner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            <state relative-caret-position="748">
+              <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -51,57 +41,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wrappertest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrappertest.py">
+      <file leaf-file-name="CalendarMaker.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/CalendarMaker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="976">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="325">
+              <caret line="47" column="112" lean-forward="false" selection-start-line="47" selection-start-column="112" selection-end-line="47" selection-end-column="112" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Parser.py">
+      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="1268">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Event.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Homework.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Exam.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exam.py">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Exam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="600">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Homework.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Homework.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,6 +93,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dueDate</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -133,10 +116,16 @@
         <option value="$PROJECT_DIR$/parser.py" />
         <option value="$PROJECT_DIR$/Exam.py" />
         <option value="$PROJECT_DIR$/CalendarMaker.py" />
-        <option value="$PROJECT_DIR$/Planner.py" />
         <option value="$PROJECT_DIR$/eventcreator.py" />
         <option value="$PROJECT_DIR$/EventCreator.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
+        <option value="$PROJECT_DIR$/Planner.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/Planner.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/Parser.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/Exam.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/Homework.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/CalendarMaker.py" />
+        <option value="$PROJECT_DIR$/../calendarsite/catalog/views.py" />
       </list>
     </option>
   </component>
@@ -187,6 +176,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calendarsite/catalog/Homework.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -432,15 +422,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.50104165" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32973558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.49895832" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -497,7 +488,7 @@
         <state relative-caret-position="378">
           <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -507,7 +498,7 @@
         <state relative-caret-position="136">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,6 +529,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EventCreator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Exam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -546,22 +545,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrappertest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Planner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="800">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -576,11 +565,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventCreator.py">
+    <entry file="file://$PROJECT_DIR$/wrappertest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="976">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -589,7 +580,63 @@
         <state relative-caret-position="896">
           <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Exam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Homework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/CalendarMaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="47" column="112" lean-forward="false" selection-start-line="47" selection-start-column="112" selection-end-line="47" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1268">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/Planner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calendarsite/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

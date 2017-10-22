@@ -45,10 +45,10 @@ class calendarmaker:
                 self.events.append(n)
 
     def getPriority(self, homework, time):
-        return math.fabs((time.hour * 60 + time.minute) - self.IDEAL_HOUR) + (homework.dueDate.day - time.day)*10
+        return math.fabs((time.hour * 60 + time.minute) - self.IDEAL_HOUR) + (homework.dueDate.day - time.day)*4
 
-    def getPriorityExam(self, exam, time):
-        return math.fabs((time.hour * 60 + time.minute) - self.IDEAL_HOUR) + (exam.time.day - time.day) * 2
+    def getExamPriority(self, exam, time):
+        return math.fabs((time.hour * 60 + time.minute) - self.IDEAL_HOUR) + (exam.date.day - time.day) * 2
 
     def getExamEvents(self, calsp, exam):
         segs = exam.intoChunks()
