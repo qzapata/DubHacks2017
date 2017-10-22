@@ -115,15 +115,26 @@
 		});
 	}
 
+	var data; 
 	window.onload = function () {
+		{{ papel|safe }}
 		var data = {{ papel|safe }};
 		console.log(data);
+
 		$('#calendar').fullCalendar({
     		weekends: true
 		});
+
+		for (var i = 0; i < data.length; i+= 3) {
+			console.log(i);
+			$('#calendar').fullCalendar( 'addEventSource', function(i){
+				title: data[i + 2];
+				start: data[i];
+				end: data[i + 1];
+			}(i));
+		}
 	};
 </script>
-<script type="text/javascript" src="{% static 'calendar.js' %}"></script>
 {% endblock %}
 {% block body %}
 
