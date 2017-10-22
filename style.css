@@ -1,20 +1,21 @@
-.btn-light-brown {
+.btn-outline-light-brown {
 	color: #F7D08A;
 	background-color: transparent;
 	background-image: none;
 	border-color: #F7D08A;
 }
 
-.btn-lime-green {
+.btn-outline-lime-green {
 	color: #E3F09B;
 	background-color: transparent;
 	background-image: none;
 	border-color: #E3F09B;
 }
 
-.btn-turqoise {
+.btn-outline-turqoise {
 	color: #87B6A7;
 	background-color: transparent;
 	background-image: none;
 	border-color: #87B6A7;
 }
+
