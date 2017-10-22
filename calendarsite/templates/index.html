@@ -1,35 +1,54 @@
 {% extends "base_generic.html" %}
 {% block body %}
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Start sorting out your life</h1>
-      <p class="lead text-muted">Need help figuring out what to do and when to do it? Let someone else deal with it!</p>
-      <p>
-        <a href="#" class="btn btn-outline-light-brown">New Task</a>
-        <a href="#" class="btn btn-outline-dark-green">New Event</a>
-        <a href="#" class="btn btn-outline-turqoise">New Exam </a> 
-      </p>
+<div id="main-content">
+  <section class="input-select">
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Task Name</span>
+      <input id="eventName" type="text" class="form-control" placeholder="Task Name" aria-describedby="basic-addon1">
     </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Start Time </span>
+      <input id="eventStart" type="text" class="form-control" placeholder="Start Time" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">End Time</span>
+      <input id="eventEnd" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block sub-btn">Submit Task</button>
+    <textarea id="eventText" readonly></textarea>
   </section>
-
-  <div class="album text-muted">
-    <div class="flex-container">
-
-      <div class="menu">
-        <div class="card"><a>Create a new task</a>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card"><a>Create a new event</a>
-          <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card"><a>Create a new exam</a>
-          <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-
+  <section class="input-select">
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Event Name</span>
+      <input id="taskName" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
     </div>
-  </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Start Time </span>
+      <input id="taskStart" type="text" class="form-control" placeholder="Start Time" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">End Time</span>
+      <input id="taskEnd" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block sub-btn">Submit Event</button>
+    <textarea id="taskText" readonly></textarea>
+  </section>
+  <section class="input-select">
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Exam Name</span>
+      <input id="examName" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">Start Time </span>
+      <input id="examStart" type="text" class="form-control" placeholder="Start Time" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon input-label" id="basic-addon1">End Time</span>
+      <input id="examEnd" type="text" class="form-control" placeholder="End Time" aria-describedby="basic-addon1">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block sub-btn">Submit Exam</button>
+    <textarea id="examText" readonly></textarea>
+  </section>
+</div>
 {% endblock %}
 
