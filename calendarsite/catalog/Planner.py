@@ -20,7 +20,10 @@ class planner:
             d[didx] = []
             if (didx == lastday):
                 break
-            didx = datetime.date(didx.year, didx.month, didx.day + 1)
+            if (didx.day == MONTH_VALUES[didx.month]):
+                didx = datetime.date(didx.year, didx.month + 1, 1)
+            else :
+                didx = datetime.date(didx.year, didx.month, didx.day + 1)
         for e in events:
             edate = datetime.date(e.start.year, e.start.month, e.start.day)
             d[edate].append(e)

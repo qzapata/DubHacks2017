@@ -9,8 +9,7 @@
 	// included, separated by spaces.
 	var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
-	var authorizeButton = document.getElementById('authorize-button');
-	var signoutButton = document.getElementById('signout-button');
+	var authorizeButton = document.getElementById('export');
 
 	/**
 	*  On load, called to load the auth2 library and API client library.
@@ -35,7 +34,6 @@
 		  // Handle the initial sign-in state.
 		  updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 		  authorizeButton.onclick = handleAuthClick;
-		  signoutButton.onclick = handleSignoutClick;
 		});
 	}
 
@@ -47,7 +45,7 @@
 		if (isSignedIn) {
 		  authorizeButton.style.display = 'none';
 		  signoutButton.style.display = 'block';
-		  listUpcomingEvents();
+		  export();
 		} else {
 		  authorizeButton.style.display = 'block';
 		  signoutButton.style.display = 'none';
@@ -61,57 +59,44 @@
 		gapi.auth2.getAuthInstance().signIn();
 	}
 
-	/**
-	*  Sign out the user upon button click.
-	*/
-	function handleSignoutClick(event) {
-		gapi.auth2.getAuthInstance().signOut();
+	function export() {
+		for var i = 0; i < data.length; i += 3
+		{
+			var start = data[i];
+			var end = data[i + 1];
+			var name = data[i + 2];
+			var event = {
+  'summary': name,
+  'location': '',
+  'description': '',
+  'start': {
+    'dateTime': start + '-07:00',
+    'timeZone': 'America/Los_Angeles',
+  },
+  'end': {
+    'dateTime': end + '-07:00',
+    'timeZone': 'America/Los_Angeles',
+  },
+  'recurrence': [
+    ''
+  ],
+  'attendees': [
+
+  ],
+  'reminders': {
+    'useDefault': False,
+    'overrides': [
+      {'method': 'email', 'minutes': 24 * 60},
+      {'method': 'popup', 'minutes': 10},
+    ],
+  },
+}
+			gapi.client.calendar.get
+			event = service.events().insert(calendarId=gapi.client.calendar.get().calendarId, body=event).execute()
+		}
 	}
 
-	/**
-	* Append a pre element to the body containing the given message
-	* as its text node. Used to display the results of the API call.
-	*
-	* @param {string} message Text to be placed in pre element.
-	*/
-	function appendPre(message) {
-		var pre = document.getElementById('content');
-		var textContent = document.createTextNode(message + '\n');
-		pre.appendChild(textContent);
-	}
-	
-	/**
-	* Print the summary and start datetime/date of the next ten events in
-	* the authorized user's calendar. If no events are found an
-	* appropriate message is printed.
-	*/
-	function listUpcomingEvents() {
-		gapi.client.calendar.events.list({
-		  'calendarId': 'primary',
-		  'timeMin': (new Date()).toISOString(),
-		  'showDeleted': false,
-		  'singleEvents': true,
-		  'maxResults': 10,
-		  'orderBy': 'startTime'
-		}).then(function(response) {
-		  var events = response.result.items;
-		  appendPre('Upcoming events:');
-
-		  if (events.length > 0) {
-		    for (i = 0; i < events.length; i++) {
-		      var event = events[i];
-		      var when = event.start.dateTime;
-		      if (!when) {
-		        when = event.start.date;
-		      }
-		      appendPre(event.summary + ' (' + when + ')')
-		    }
-		  } 	else {
-		    appendPre('No upcoming events found.');
-		  }
-		});
-	}
-
+	var data;
 	window.onload = function () {
 		var data = {{ papel|safe }};
 		console.log(data);
