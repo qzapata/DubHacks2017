@@ -14,6 +14,7 @@ class calendarmaker:
     def __init__(self, homeworks, days):
         self.homeworks = homeworks
         self.days = days
+        self.events = []
         for h in homeworks:
             duedate = datetime.date(h.dueDate.year, h.dueDate.month, h.dueDate.day)
             dates = []
@@ -24,7 +25,9 @@ class calendarmaker:
                     break
                 dateidx += 1
             cal = CalendarSpace.calendarspace(dates)
-            self.events = self.getEvents(cal, h)
+            newevents = self.getEvents(cal, h)
+            for n in newevents:
+                self.events.append(n)
 
     def getPriority(self, homework, time):
         return math.fabs((time.hour * 60 + time.minute) - self.IDEAL_HOUR) + (homework.dueDate.day - time.day)*10

@@ -21,7 +21,6 @@ class homework:
             else:
                 eventList.append(HomeworkSegment.homeworksegment(dur, self.name))
                 break
-        for e in eventList:
-            print(e.__str__())
         return eventList
+
 
