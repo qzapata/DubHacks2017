@@ -47,10 +47,11 @@
 		console.log(values);
 		$.ajax({
 	        type: 'post',
-	        url: 'get_data',
+	        url: '/catalog/get_data',
 	        data: {'tasks[]': values,
 	     		csrfmiddlewaretoken:csrftoken
 	     	},
+			complete: window.location.href = 'get_data'
     	});
 	}
 }) ();
